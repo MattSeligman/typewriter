@@ -4,13 +4,13 @@ let timer = 0;
 
 for (const char of sentence) {
 
-    setTimeout(() => {
-        process.stdout.write(char);
-      }, timer);
+  setTimeout(() => {
+    process.stdout.write(char);
+  }, timer);
 
-      timer = timer + 50;
+  timer = timer + 50;
 }
 
 setTimeout(() => {
-    process.stdout.write("\n");
-  }, timer);
+  process.stdout.write("\n");
+}, timer);
